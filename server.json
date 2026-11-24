@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.kiescy/kiescy",
+  "title": "Kiescy",
+  "description": "Read your site's cookie consent, accessibility and security issues and fix them in code.",
+  "websiteUrl": "https://kiescy.com/product/fix-with-ai",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.kiescy.com/mcp",
+      "headers": [
+        {
+          "name": "X-API-Key",
+          "description": "Your website's API key from Kiescy (the website, then Fix with AI). Free account at kiescy.com.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.kiescy/documents",
+  "title": "Kiescy Documents",
+  "description": "Write, import, design and publish your privacy policy, terms and cookie policy with your AI.",
+  "websiteUrl": "https://kiescy.com/product/ai-documents",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.kiescy.com/mcp/documents",
+      "headers": [
+        {
+          "name": "X-API-Key",
+          "description": "Your website's API key from Kiescy (the website, then Fix with AI). Free account at kiescy.com.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
